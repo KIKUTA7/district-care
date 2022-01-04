@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="author" content="Beqa Kikutadze"/>
+<meta name="keyword" content="district, უბანი"/>
+<link rel="shortcut icon" type="image/x-icon" href="urban.jfif" />
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
+ <style>
+   body {background-color:rgb(215,215,215);}
+#form {
+	margin-left:80px;
+	margin-top:20px;
+	border-radius:4px;
+	width:30%;height:620px;
+	-webkit-box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	-moz-box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	background-color:#ffffff;
+	box-sizing:border-box;
+}
+#shenishvna {
+	width:90%;height:90px;
+	font-size:14px;font-family: "Ubuntu", sans-serif;
+	resize:none;
+	padding-left:10px;padding-top:8px;
+}
+#bodiali {
+	position:absolute;
+	top:80px;right:200px;
+	width:40%;justify-content:center;
+}
+hr {width:99%;}
+#x {padding-left:22px;line-height:25px;display:block;}
+#yes {margin-left:21px;}
+#firstname {
+	padding-top:20px;
+	padding-left:20px;
+}
+#saxeli,#gvari {
+	width:90%;height:40px;
+	font-size:16px;font-family:"Audiowide" ,sans-serif;
+	outline:#ee1c1c;padding-left:10px;
+}
+#saxeli:focus {border:1px solid #ee1c1c;}
+#gvari:focus {border:1px solid #ee1c1c;}
+#lastname {
+	line-height:60px;
+	padding-left:20px;
+}
+#address {
+    padding-left:20px;	
+}
+#misamarti {
+	width:90%;height:90px;
+	font-size:14px;font-family: "Ubuntu", sans-serif;
+	resize:none;
+	padding-left:10px;padding-top:8px;
+}
+#saxeli,#gvari,#misamarti,#shenishvna {border-radius:6px;border:1px solid #dadde1;outline:#ee1c1c;}
+#misamarti:focus {
+	border:1px solid #ee1c1c;
+}
+#shenishvna:focus {
+	border:1px solid #ee1c1c;
+}
+p {font-size:20px;padding-left:20px;}
+b {font-size:16px;padding-left:20px;line-height:45px;}
+#image2 {width:132px;height:150px;margin-left:30px;border-radius:5px;} #image1 {height:150px;border-radius:5px;}
+#button {margin-left:20px;margin-top:20px;
+color:white;background-color:#093299;width:50px;height:23px;
+font-family:Helvetica, Arial, sans-serif;
+border-radius:20px;border:none;}
+#button:visited {border-color:white;}
+#button:active {border-color:white;}
+@media  screen and (max-width:970px) {
+	#form {width:60%;margin-left:120px;}
+	#bodiali {position:absolute;
+	top:650px;left:140px;width:50%;}
+}
+@media  screen and (max-width:700px) {
+	#image2 {margin-left:3px; margin-top:20px;}
+	#form {width:90%;margin-left:20px;}
+	#bodiali{width:60%;margin-left:-80px;}
+	}
+@media screen and (max-width:411px) {
+	#firstname,#lastname,#address{padding-left:15px;}
+	#x{padding-left:20px;}
+	#misamarti,#saxeli,#gvari,#shenishvna{width:90%;}
+}
+@media  screen and (max-width:362px) {
+    #email {font-size:16px;}
+	#x{font-size:15px;}
+}	
+
+ </style>
+<!-- <link rel="stylesheet" type="text/css" href="C:\Users\beqak\OneDrive\Desktop\HTML5+CSS3\HOST\style.css"/> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide|Ubuntu"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title> Urban Infrastructure </title>
+</head>
+<body>
+<form action="https://formspree.io/f/mqkgnzza" method="POST" id="form" target="_blank" >
+  <div id="firstname">
+  
+  <input type="text" placeholder="Write Your First Name" name="firstname" id="saxeli"  maxlength="20" autofocus="1" required/>
+ </div>
+ <div id="lastname">
+  
+  <input type="text" placeholder="Write Your Last Name" name="lastname" id="gvari"  maxlength="20" required/>  
+ </div>
+ <div id="address">
+  
+  <textarea id="misamarti" name="address" cols="10" rows="5" placeholder="Write Your Address" required></textarea>
+  <textarea id="shenishvna" name="advice" cols="10" rows="5" placeholder="Write what you would change in your district" required></textarea>
+ </div> 
+
+ 
+ <div id="archevani">
+ <label for="radio" id="x">Are you satisfied with your district ?</label> <br>
+ <input type="radio" name="radio" id="yes" checked="checked">
+ <label for="yes"> Yes </label>
+ <input type="radio" name="radio" id="no" >
+ <label for="no"> No </label>
+ </div>
+ <button type="submit" id="button"> Next </button>
+ 
+<hr/>
+<p style="color:#04045b;"> Contact Information </p>
+<p> &#128241 <span style="color:#04045b;"> +995 599 23 51 62 </span> <p>
+<p> <i class="material-icons">chat</i> <span style="color:#04045b;" id="email"> gioyruashvili@gmail.com </span> <p>
+
+</form>
+<div id="bodiali">
+<h2> &#160 We can change future only with you </h2>
+<p>Our company "Formspree holding" is running a survey to understand people's opinion whether they like their district's infrastructure </p>
+<p>We have many plans to progress every country's infrastructure,which has signed contracts with us  </p>
+<b> Trusted by </b>
+ <p> <image id="image1" src="formspree.jfif"/> 
+ <image id="image2" src="award.png"/></p>
+ 
+  
+</div>
+</body>
+</html>
